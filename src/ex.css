@@ -1,0 +1,67 @@
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.bucket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.bucket-table th,
+.bucket-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.bucket-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.bucket-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.bucket-table tr:hover {
+    background-color: #ddd;
+}
+
+button {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+.delete-icon {
+    color: red;
+    cursor: pointer;
+}
+
+.task-form {
+    margin-top: 20px;
+}
+
+.task-form input {
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+#submitBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: #218838;
+}

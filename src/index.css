@@ -1,0 +1,284 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+
+body {
+  background-image: url("https://img.freepik.com/free-photo/plain-smooth-green-wall-texture_53876-129746.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius: 10px;
+  width: 600px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.task-list {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+
+input {
+  width: 350px;
+  margin-left: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+#submitBtn {
+  width: 130px;
+  padding: 7px;
+  background-color: #e272bd;
+  margin-left: 220px;
+  margin-bottom: 45px;
+  border-radius: 10px;
+  color: rgb(7, 3, 3);
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background-color: #315d72;
+  padding: 10px;
+  border-radius: 5px;
+  color: aliceblue;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#removeBtn {
+  background-color: #e272bd;
+  color: rgb(5, 0, 0);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+}
+
+.text-white {
+  color: white;
+}
+
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  /* overflow: hidden;  */
+}
+
+.sidebar {
+  background-color: linear-gradient(to bottom, #1B263B, #12343b);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  /* overflow-y: auto;  */
+}
+
+.main-content {
+  margin-left: 250px;
+  flex: 1;
+  padding: 20px;
+  /* overflow-y: auto; */
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  /* overflow-y: auto; */
+}
+
+#bucketList {
+  height: 30px;
+  width: 120px;
+  border-radius: 6px;
+}
+
+#completedBucketList {
+  height: 35px;
+  width: 120px;
+  border-radius: 6px;
+}
+
+#compltedTasks {
+  height: 30px;
+  width: 120px;
+  border-radius: 6px;
+}
+
+#tasks {
+  height: 30px;
+  width: 120px;
+  border-radius: 6px;
+}
+
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  /* Adds spacing between icons */
+}
+
+/* #edit, #remove {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin-left: 350px;
+    /* position :fixed; */
+
+/* } */
+#removeicon {
+  display: 'flex';
+  margin-left: 20%;
+  position: fixed;
+  /* align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+     border: 1px solid #ccc;
+     margin-bottom: 5px;
+     border-radius: 4px;
+     margin-left: 50%; */
+
+}
+
+#checkbox1 {
+  margin-left: 25%;
+  position: fixed;
+}
+
+/* _________________________________________________________________________________ */
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+/* Card */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+/* Input */
+.input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* .button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+
+/* ________________________________________________changed____________________________________ */
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: #004b64;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+
+.task-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#editBtn,
+#deleteBtn,
+#checkBtn {
+  /* min-width: 40px; Ensure buttons don't shrink */
+  text-align: center;
+
+}
+
+#checkBtn{
+  margin-left: 0px;
+}
+
+#editBtn {
+  margin-left: 100px;
+}
+
+.spanText {
+  width: 100% !important;
+  overflow-wrap: anywhere;
+}
+/* #completedTask{
+  width: 90%;
+  
+} */
